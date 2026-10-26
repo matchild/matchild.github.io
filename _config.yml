@@ -1,4 +1,5 @@
 theme: jekyll-theme-minimal
 title: Matteo Child
-description: 'PhD Student in Quantum Computing @ <a href="https://www.unimib.it/" target="_blank" rel="noopener noreferrer">UniMiB</a>'#logo: /assets/img/profile.jpg 
+description: 'PhD Student in Quantum Computing @ <a href="https://www.unimib.it/" target="_blank" rel="noopener noreferrer">Unimib</a>'
+#logo: /assets/img/profile.jpg 
 show_downloads: false
