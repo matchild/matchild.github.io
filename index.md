@@ -16,7 +16,7 @@ visitors: ""
 ## Biography
 
 I am a C.S. Ph.D. student advised by
-[Prof. Alberto Leporati](https://www.unimib.it/alberto-ottavio-leporati), interested
+[Prof. Alberto Leporati](https://en.unimib.it/alberto-ottavio-leporati), interested
 in Quantum Simulation, Quantum Error Correction and autoresearch methods. I enjoy
 self-hosting LLMs and enquiring about fundamental questions in theoretical physics.
 
