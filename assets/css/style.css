@@ -1,0 +1,159 @@
+/* 2010-era academic personal page.
+   Everything is local: no web fonts, no CDN, no scripts. */
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font: 17px/1.5 Arial, Helvetica, sans-serif;
+}
+
+a { color: #1a4a9c; }
+a:visited { color: #6b3fa0; }
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px 0;
+}
+
+/* ---------- masthead ---------- */
+
+.site-title {
+  margin: 0;
+  text-align: center;
+  font: bold 28px "Trebuchet MS", Verdana, Geneva, sans-serif;
+  color: #1b3f80;
+}
+
+.tagline {
+  margin: 2px 0 14px;
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+}
+
+/* ---------- navigation bar ---------- */
+
+.site-nav {
+  margin: 0 0 22px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 18px;
+  background: #dbe6f4;
+  background: linear-gradient(to bottom, #eaf0fa 0%, #cfdcf0 100%);
+  border-top: 1px solid #9db2d4;
+  border-bottom: 1px solid #9db2d4;
+}
+
+.site-nav a {
+  color: #1a4a9c;
+  text-decoration: none;
+}
+
+.site-nav a:hover { text-decoration: underline; }
+
+.site-nav .sep {
+  color: #444444;
+  padding: 0 7px;
+}
+
+/* ---------- two columns ---------- */
+
+.body { overflow: hidden; }
+
+.sidebar {
+  float: left;
+  width: 250px;
+  margin: 4px 26px 0 0;
+}
+
+.portrait {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin: 0 auto 6px;
+  padding: 3px;
+  border: 1px solid #808080;
+  background: #ffffff;
+}
+
+.portrait-caption {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.contact p {
+  margin: 0 0 3px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.contact a { text-decoration: underline; }
+
+.content { margin-left: 276px; max-width: 780px; }
+
+/* ---------- content ---------- */
+
+.content h2 {
+  font: bold 20px Arial, Helvetica, sans-serif;
+  margin: 22px 0 10px;
+  color: #000000;
+}
+
+.content h3 {
+  font: bold 17px Arial, Helvetica, sans-serif;
+  margin: 18px 0 8px;
+}
+
+.content p { margin: 10px 0; }
+
+.content ul {
+  margin: 8px 0 12px;
+  padding-left: 24px;
+}
+
+.content li { margin: 0 0 9px; }
+
+.content li p { margin: 0; }
+
+.content code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+.content blockquote {
+  margin: 10px 20px;
+  color: #555555;
+}
+
+/* ---------- footer ---------- */
+
+.footer {
+  clear: both;
+  margin-top: 30px;
+  padding: 12px 0 26px;
+  border-top: 1px solid #cfcfcf;
+  text-align: center;
+  color: #777777;
+  font-size: 13px;
+}
+
+.footer p { margin: 2px 0; }
+
+/* ---------- small screens (the original 2010 page had none, but let's not break) ---------- */
+
+@media (max-width: 760px) {
+  .sidebar {
+    float: none;
+    width: auto;
+    margin: 0 0 18px;
+  }
+
+  .content { margin-left: 0; }
+
+  .portrait { margin: 0 auto; }
+
+  .contact p { white-space: normal; }
+}

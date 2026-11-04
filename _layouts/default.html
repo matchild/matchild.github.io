@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body id="top">
+<div class="page">
+
+<header class="masthead">
+  <h1 class="site-title">{{ page.title }}</h1>
+  {% if page.tagline %}<p class="tagline">{{ page.tagline }}</p>{% endif %}
+</header>
+
+<nav class="site-nav">
+  <a href="#top">Home</a> <span class="sep">|</span>
+  <a href="#biography">Biography</a> <span class="sep">|</span>
+  <a href="#publications">Publications</a> <span class="sep">|</span>
+  <a href="#tutorials">Tutorials</a> <span class="sep">|</span>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="body">
+  <aside class="sidebar">
+    {% if page.photo %}<img class="portrait" src="{{ page.photo }}" alt="{{ page.photo_caption }}">{% endif %}
+    {% if page.photo_caption %}<div class="portrait-caption">{{ page.photo_caption }}</div>{% endif %}
+    <div class="contact" id="contact">
+      {% if page.email %}<p>Email: <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>{% endif %}
+      {% if page.office %}<p>Office: {{ page.office }}</p>{% endif %}
+      {% if page.github %}<p><a href="{{ page.github }}">GitHub</a></p>{% endif %}
+      {% if page.scholar %}<p><a href="{{ page.scholar }}">Google Scholar</a></p>{% endif %}
+      {% if page.arxiv %}<p><a href="{{ page.arxiv }}">arXiv</a></p>{% endif %}
+    </div>
+  </aside>
+
+  <main class="content">
+    {{ content }}
+  </main>
+</div>
+
+<footer class="footer">
+  {% if page.updated %}<p>Last updated: {{ page.updated }}</p>{% endif %}
+  {% if page.visitors %}<p>Visitors: {{ page.visitors }}</p>{% endif %}
+</footer>
+
+</div>
+</body>
+</html>

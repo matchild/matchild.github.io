@@ -1,0 +1,19 @@
+# Local agent instructions — keep out of this public repo
+AGENTS.md
+
+# Local tooling and preview output (never published)
+.tools/
+_preview/
+
+# Local Playwright install (screenshots only, not part of the site)
+node_modules/
+/package.json
+/package-lock.json
+/playwright-report/
+/test-results/
+/blob-report/
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
